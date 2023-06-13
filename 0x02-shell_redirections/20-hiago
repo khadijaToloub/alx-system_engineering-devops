@@ -1,0 +1,2 @@
+#!/bin/bash
+bash remove_c.sh "Remove all letters c and C"
