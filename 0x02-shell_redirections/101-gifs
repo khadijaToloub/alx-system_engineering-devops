@@ -1,0 +1,3 @@
+#!/bin/bash
+find . -type f -name '*.gif' -exec bash -c 'for file do printf "%s\n" "${file%.*}"; done' bash {} + | LC_COLLATE=C sort -f | while IFS= read -r file; do echo "$file"; done
+echo
