@@ -1,2 +1,2 @@
 #!/bin/bash
-bash remove_c.sh "Remove all letters c and C"
+tr -d "c" | tr -d "C"
